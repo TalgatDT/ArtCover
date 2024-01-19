@@ -18,7 +18,7 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
@@ -67,10 +67,10 @@ img {
 /* header */
 .header {
 	margin-bottom: 6vw;
-	height: 540px;
+	height: 37vw;
 	background-image: url(../img/head-bg.jpg);
 	background-repeat: no-repeat;
-    background-size: cover;
+	background-size: cover;
 }
 
 /* .header-container {
@@ -89,6 +89,7 @@ img {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 24px;
+	/* font-size: 166%; */
 	line-height: 30px;
 	color: var(--color-white);
 }
@@ -103,6 +104,13 @@ img {
 	text-transform: uppercase;
 	color: var(--color-grey);
 }
+
+/* ======= Burger-menu ======= */
+.burger-menu {
+	display: none;
+}
+
+/* ======= /Burger-menu ======= */
 
 .nav-item:not(:last-child) {
 	margin-right: 40px;
@@ -182,7 +190,7 @@ img {
 }
 
 .card {
-	height: 17vw;
+	height: 16vw;
     width: 100%;
 	position: relative;
 	overflow: hidden;
@@ -196,7 +204,7 @@ img {
 .card-img {
 	position: absolute;
 	top: 0;
-	height: 110%;
+	/* height: 110%; */
 	width: 100%;
 	z-index: -1;
 	transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -205,7 +213,7 @@ img {
 .card-title {
 	color: white;
 	font-size: 24px;
-	margin: 20px 0 0 20px;  
+	margin: 6% 0 0 6%;  
 }
 
 .card-sublist {
@@ -213,7 +221,7 @@ img {
 	font-weight: 400;
 	font-size: 16px;
 	align-self: end;
-	margin: 0 0 20px 20px;
+	margin: 0 0 6% 6%;
 	letter-spacing: 0.5px;
 }
 
@@ -305,7 +313,7 @@ img {
 		font-size: 37px;
 	}
 	.head-container {
-		padding: 16% 3% 7.5%;
+		padding: 10% 3% 7.5%;
 	}
 	.btn {
 		width: 40%;
@@ -313,5 +321,148 @@ img {
 		font-size: 17px;
 		border-radius: 3%;
 	}
-  }
+}
+
+@media (max-width: 992px) {
+	.portfolio-content {
+		margin-bottom: 4%;
+		grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+		grid-gap: 2rem;
+	}
+	.card {
+		height: 20vw;
+		width: 100%;
+	}
+}
+
+@media (max-width: 910px) {
+	.logo {
+		font-size: 20px;
+		/* font-size: 150%; */
+	}	
+	.head-container {
+		padding: 8% 3% 7.5%;
+	}
+	.head-title {
+		padding-bottom: 5%;
+		font-size: 28px;
+	}
+	.logo__footer {
+		margin-bottom: 1%;
+		font-size: 15px;
+	}
+
+}
+
+@media (max-width: 768px) {
+	.container {
+		margin-right: 3%;
+		margin-left: 3%;
+	}
+	.header-flex {
+		padding-top: 3%;
+	}
+	.header {
+		margin-bottom: 12%;
+	}
+	.head-container {
+		padding: 8% 14% 7.5%;
+	}
+	.head-title {
+		padding-bottom: 5%;
+		font-size: 33px;
+	}
+	.btn {
+		width: 75%;
+		font-size: 19px;
+	}
+	.card {
+		height: 23vw;
+	}
+}
+
+@media (max-width: 767px) {
+	.nav {
+		display: none;
+	}
+	.burger-menu {
+		display: flex;
+	}
+}
+
+@media (max-width: 700px) {
+	.header {
+		margin-bottom: 16%;
+	}
+}
   
+
+@media (max-width: 610px) {
+	.header {
+		margin-bottom: 22%;
+	}
+	.head-container {
+		padding: 8% 10% 7.5%;
+	}
+	.card {
+		height: 28vw;
+	}
+}
+
+@media (max-width: 576px) {
+	.container {
+		margin-right: 3%;
+		margin-left: 2%;
+	}
+	.header {
+		margin-bottom: 25%;
+	}
+	.logo {
+		font-size: 18px;
+	}
+	.head-title {
+		padding-bottom: 9%;
+		font-size: 35px;
+	}
+	.portfolio-content {
+		grid-template-columns: repeat(auto-fill, minmax(102%, 1fr));
+	}
+	.card {
+		height: 42vw;
+		width: 98%;
+	}
+	.card:hover {
+		transform: scale(1.01, 1.01);
+		box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+	}
+	
+	.card:hover .card-img {
+		transform: translateY(-10px);
+	}
+}
+
+@media (max-width: 520px) {
+	.container {
+		margin-right: 3%;
+		margin-left: 2%;
+	}
+	.header {
+		margin-bottom: 50%;
+	}
+	.head-container {
+		padding: 12% 4% 7.5%;
+	}
+	.btn {
+		width: 90%;
+	}
+}
+
+@media (max-width: 430px) {
+	.head-title {
+		padding-bottom: 7%;
+		font-size: 27px;
+	}
+	.head-container {
+		padding: 12% 0 7.5%;
+	}
+}
