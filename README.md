@@ -1,1 +1,1 @@
-# portfolio-versus (from figma maket) change ArtCover-site
+# Figma layout taken as a basis and modified
