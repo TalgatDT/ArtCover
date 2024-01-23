@@ -1,144 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ArtCover</title>
-	<!-- Stiles -->
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ArtCover</title>
+		<!-- Stiles -->
+		<link rel="stylesheet" href="styles/normalize.css">
+		<link rel="stylesheet" href="styles/style.css">
 
-	<!-- Scripts -->
-	<!-- <script defer src="scripts/main.js"></script> -->
-</head>
+		<!-- Scripts -->
+		<script defer src="scripts/main.js"></script>
+	</head>
 
-<body>
-	<header class="header">
-		<div class="container  header-container  flex  header-flex">
-			<a href="#" class="logo">
-				ARTCOVER
-			</a>
-			<nav class="nav  flex">
-				<li class="nav-item">
-					<a href="#" class="nav-link">Portfolio</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link">About</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link">Contact</a>
-				</li>
-			</nav>
-			
-			<!-- ============== Burger-menu ============== -->
-			<!-- <div class="burger-menu">
-				<a href="#menu" id="toggle"><span></span></a>
-	
-				<div id="menu">
-					<ul>
-						<li><a href="#home">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
+	<body>
+		<header class="header">
+			<div class="container  header-container  flex  header-flex">
+				<a href="#" class="logo">
+					ARTCOVER
+				</a>
+				<ul class="nav  flex">
+					<li class="nav-item">
+						<a href="#" class="nav-link">Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">About</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Contact</a>
+					</li>
+				</ul>
+				
+				<!-- ============== Burger-menu ============== -->
+				<nav class="nav-burger">
+					<ul class="menu">
+					<li class="item"><a class="burger__link" href="#">Portfolio</a></li>
+					<li class="item"><a class="burger__link" href="#">About</a></li>
+					<li class="item"><a class="burger__link" href="#">Contact</a></li>
+					</ul>
+					<button class="btn-reset burger">
+					<span class="burger__line"></span>
+					<span class="burger__line"></span>
+					<span class="burger__line"></span>
+					</button>
+				</nav>
+				<!-- ============== /Burger-menu ============== -->
+			</div>
+			<div class="container  head-container  flex">
+				<h1 class="title  head-title">
+					We build beautiful web and mobile apps.
+				</h1>
+				<button class="btn  btn-head">
+					Get a quote
+				</button>
+			</div>
+		</header>
+
+		<main>
+			<section class="work">
+				<div class="container">
+					<h2 class="title  work-title">
+						Latest Work
+					</h2>
+					<ul class="portfolio-content">
+						<a href="#" class="card-link">
+							<li class="card">
+								<img class="card-img" src="img/001.jpg" />
+								<h3 class="card-title">Card title</h3>
+								<p class="card-sublist">Card description</p>
+							</li>
+						</a>
+						<a href="#" class="card-link">
+							<li class="card">
+								<img class="card-img" src="img/002.jpg" />
+								<h3 class="card-title">Card title</h3>
+								<p class="card-sublist">Card description</p>
+							</li>
+						</a>
+						<a href="#" class="card-link">
+							<li class="card">
+								<img class="card-img" src="img/003.jpg" />
+								<h3 class="card-title">Card title</h3>
+								<p class="card-sublist">Card description</p>
+							</li>
+						</a>
+						<a href="#" class="card-link">
+							<li class="card">
+								<img class="card-img" src="img/004.jpg" />
+								<h3 class="card-title">Card title</h3>
+								<p class="card-sublist">Card description</p>
+							</li>
+						</a>
+						<a href="#" class="card-link">
+							<li class="card">
+								<img class="card-img" src="img/005.jpg" />
+								<h3 class="card-title">Card title</h3>
+								<p class="card-sublist">Card description</p>
+							</li>
+						</a>
+						<a href="#" class="card-link">
+							<li class="card">
+								<img class="card-img" src="img/006.jpg" />
+								<h3 class="card-title">Card title</h3>
+								<p class="card-sublist">Card description</p>
+							</li>
+						</a>
+						<a href="#" class="card-link">
+							<li class="card">
+								<img class="card-img" src="img/007.jpg" />
+								<h3 class="card-title">Card title</h3>
+								<p class="card-sublist">Card description</p>
+							</li>
+						</a>
+						<a href="#" class="card-link">
+							<li class="card">
+								<img class="card-img" src="img/008.jpg" />
+								<h3 class="card-title">Card title</h3>
+								<p class="card-sublist">Card description</p>
+							</li>
+						</a>
+						<a href="#" class="card-link">
+							<li class="card">
+								<img class="card-img" src="img/009.jpg" />
+								<h3 class="card-title">Card title</h3>
+								<p class="card-sublist">Card description</p>
+							</li>
+						</a>
 					</ul>
 				</div>
-			</div> -->
-			<!-- ============== /Burger-menu ============== -->
-		</div>
-		<div class="container  head-container  flex">
-			<h1 class="title  head-title">
-				We build beautiful web and mobile apps.
-			</h1>
-			<button class="btn  btn-head">
-				Get a quote
-			</button>
-		</div>
-	</header>
+			</section>
+		</main>
 
-	<main>
-		<section class="work">
-			<div class="container">
-				<h2 class="title  work-title">
-					Latest Work
-				</h2>
-				<ul class="portfolio-content">
-					<a href="#" class="card-link">
-						<li class="card">
-							<img class="card-img" src="img/001.jpg" />
-							<h3 class="card-title">Card title</h3>
-							<p class="card-sublist">Card description</p>
-						</li>
-					</a>
-					<a href="#" class="card-link">
-						<li class="card">
-							<img class="card-img" src="img/002.jpg" />
-							<h3 class="card-title">Card title</h3>
-							<p class="card-sublist">Card description</p>
-						</li>
-					</a>
-					<a href="#" class="card-link">
-						<li class="card">
-							<img class="card-img" src="img/003.jpg" />
-							<h3 class="card-title">Card title</h3>
-							<p class="card-sublist">Card description</p>
-						</li>
-					</a>
-					<a href="#" class="card-link">
-						<li class="card">
-							<img class="card-img" src="img/004.jpg" />
-							<h3 class="card-title">Card title</h3>
-							<p class="card-sublist">Card description</p>
-						</li>
-					</a>
-					<a href="#" class="card-link">
-						<li class="card">
-							<img class="card-img" src="img/005.jpg" />
-							<h3 class="card-title">Card title</h3>
-							<p class="card-sublist">Card description</p>
-						</li>
-					</a>
-					<a href="#" class="card-link">
-						<li class="card">
-							<img class="card-img" src="img/006.jpg" />
-							<h3 class="card-title">Card title</h3>
-							<p class="card-sublist">Card description</p>
-						</li>
-					</a>
-					<a href="#" class="card-link">
-						<li class="card">
-							<img class="card-img" src="img/007.jpg" />
-							<h3 class="card-title">Card title</h3>
-							<p class="card-sublist">Card description</p>
-						</li>
-					</a>
-					<a href="#" class="card-link">
-						<li class="card">
-							<img class="card-img" src="img/008.jpg" />
-							<h3 class="card-title">Card title</h3>
-							<p class="card-sublist">Card description</p>
-						</li>
-					</a>
-					<a href="#" class="card-link">
-						<li class="card">
-							<img class="card-img" src="img/009.jpg" />
-							<h3 class="card-title">Card title</h3>
-							<p class="card-sublist">Card description</p>
-						</li>
-					</a>
-				</ul>
+		<footer class="footer">
+			<div class="container  flex  footer-container">
+				<a href="#" class="logo  logo__footer">
+					ARTCOVER
+				</a>
+				<p class="powered-by">
+					Powered by <a href="https://github.com/TalgatDT"  class="powered-link" target="_blank">TalgatDT</a>
+				</p>
 			</div>
-		</section>
-	</main>
-
-	<footer class="footer">
-		<div class="container  flex  footer-container">
-			<a href="#" class="logo  logo__footer">
-				ARTCOVER
-			</a>
-			<p class="powered-by">
-				Powered by <a href="https://github.com/TalgatDT/my-business-card-site"  class="powered-link" target="_blank">TalgatDT</a>
-			</p>
-		</div>
-	</footer>
-</body>
+		</footer>
+	</body>
 </html>
